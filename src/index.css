@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.root{
+  background-image: url('./bitcoin.png');
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-x: -20%;
+  background-position-y: 200%;
+  background-color: #20232a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+  .main-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(110, 48, 48);
+    margin-top: 25px;
+    border: 2px solid rgb(97, 218, 251);
+    border-radius: 3px;
+  }
+
+  .custom-select select {
+    color: rgb(97, 218, 251);
+    display: block;
+    width: 130px;
+    min-height: 37px;
+    background: #20232a;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 0 20px 5px 5px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .custom-field {
+    position: relative;
+    font-size: 14px;
+    border-top: 20px solid transparent;
+    margin-bottom: 5px;
+  }
+
+  .custom-field input {
+    margin-right: 10px;
+    color: rgb(97, 218, 251);
+    border-color: rgb(97, 218, 251);
+    border-style: solid;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #20232a;
+    padding: 12px;
+    padding-bottom: 13.5px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .custom-field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10%);
+    transform: translateY(-50%);
+    color: rgb(149, 212, 229);
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+
+  .custom-field input:focus + .placeholder,
+  .custom-field input:valid + .placeholder{
+    top: -20px;
+    font-size: 10px;
+    color: rgb(97, 218, 251);
+  }
+
+  .output{
+    margin-right: 10px;
+    color: rgb(97, 218, 251);
+    border-color: rgb(97, 218, 251);
+    border-style: solid;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #20232a;
+    padding: 12px;
+    padding-bottom: 13.5px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+  }
+  ::placeholder{
+    color:rgb(149, 212, 229);
+  }
+
+  .button{
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: #20232a;
+    color: rgb(97, 218, 251);
+    border: 2px solid rgb(97, 218, 251);
+    border-radius: 3px;
+  }
+
+  .button:hover{
+    background-color: rgb(97, 218, 251);
+    color: #20232a;
+  }
+
+  .div-3{
+    margin-left: 150px;
+  }
+  .heading{
+      font-size: 35px;
+      color:rgb(97, 218, 251);
+      margin-bottom:50px;
+  }
+
+@media screen and (max-width: 450px) { 
+  .output{
+    margin-right: 10px;
+    color: rgb(97, 218, 251);
+    border-color: rgb(97, 218, 251);
+    border-style: solid;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #20232a;
+    padding: 12px;
+    padding-bottom: 13.5px;
+    border-radius: 3px;
+    width: 200px;
+    outline: none;
+    font-size: 14px;
+  }
+  .custom-field input {
+    margin-right: 10px;
+    color: rgb(97, 218, 251);
+    border-color: rgb(97, 218, 251);
+    border-style: solid;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #20232a;
+    padding: 12px;
+    padding-bottom: 13.5px;
+    border-radius: 3px;
+    width: 200px;
+    outline: none;
+    font-size: 14px;
+  }
+  .custom-select select {
+    color: rgb(97, 218, 251);
+    display: block;
+    width: 100px;
+    min-height: 37px;
+    background: #20232a;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 0 20px 5px 5px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .heading{
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .root{
+    margin-top: 0;
+    background-image: url('./bitcoin.png');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: -100%;
+    background-position-y: 90%;
+    background-color: #20232a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+}
